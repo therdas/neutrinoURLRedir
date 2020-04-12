@@ -12,7 +12,9 @@
       var appPath = 'therdas://neutrinoRuntime';
       var query = path.slice(path.indexOf(keyString) + keyString.length);
       a.href = appPath + query;
+      a.textContent = 'If the app did not open automatically, click this link to open it...';
       document.querySelector('body').appendChild(a);
+      a.click();
     </script>
   </body>
 </html>
