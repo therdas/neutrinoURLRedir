@@ -5,6 +5,13 @@
     </title>
   </head>
   <body>
-    <script>window.alert("WORKING");</script>
+    <script>
+      var path = window.location.pathname;
+      var a = document.createElement('a');
+      var keyString = 'neutrinoURLRedir/';
+      var query = path.slice(path.indexOf(keyString) + keyString.length);
+      a.attributes.href = query;
+      document.querySelector('body').appendChild(a);
+    </script>
   </body>
 </html>
