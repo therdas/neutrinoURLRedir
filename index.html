@@ -9,8 +9,9 @@
       var path = window.location.pathname;
       var a = document.createElement('a');
       var keyString = 'neutrinoURLRedir/';
+      var appPath = 'therdas://neutrinoRuntime';
       var query = path.slice(path.indexOf(keyString) + keyString.length);
-      a.attributes.href = query;
+      a.href = appPath + query;
       document.querySelector('body').appendChild(a);
     </script>
   </body>
